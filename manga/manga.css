@@ -1,0 +1,73 @@
+body {
+  background-image: url(fondo.jpg);
+  background-color: black;
+    font-family:'Comic Neue', cursive;
+    margin: 0;
+}
+
+header {
+  height: 70px;
+  background-color: #000000;
+  padding: 5px 5px 5px 5px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+   height: 120px;
+
+}
+.menu {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        height:10vh;
+        list-style: none;
+        background-color:rgb(0, 0, 0);
+}
+.menu li {
+    width: 125px;
+    height: 50px;
+    transition: background-position-x 0.9s linear;
+    text-align: center;
+    }
+  
+    a {
+      font-size: 22px;
+      text-decoration: none;
+      transition: all 0.45s;
+      color: white !important;
+    }
+
+    a:visited {
+      color: white;
+    }
+
+  .perfil, .carro {
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    margin: 10px auto;
+    padding: 3px 3px 3px 3px;
+    filter:brightness(1.1);
+    mix-blend-mode: multiply;
+  }
+
+  #Buscador {
+  background: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png") no-repeat 0px 5px;
+  background-size: 24px;
+  width: 200px;
+  border:transparent;
+  padding: 10px 10px 10px 30px;
+  overflow: hidden;
+  }
+
+ .Logopagina{
+  height: 100px;
+  width: 100px;
+  border-radius:50px;
+ }
+
+ nav {
+  font-family:'Comic Neue', cursive;
+ }
+#colorletra { color: white;}

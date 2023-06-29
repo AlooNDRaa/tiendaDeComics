@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coder Comics</title>
+        <link rel="stylesheet" href="Tienda.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+      
+    <header>
+        <div class="barraprincipal">
+          <div>
+            <img src="LOGO/logo_size.jpg" alt="Gato" class="Logopagina">
+            <input type="search" placeholder="Que estas buscando?" id="Buscador" />
+          </div>
+      <div class="contenedor">
+        <div class="icons">
+            <a href="LogIn.html" >
+              <img src="/imagenes/Perfiil.png" alt="Mi cuenta" class="perfil" >
+            </a>
+            <a href="#" >
+                <img src="imagenes/img.png" alt="Carrito" class="carro" >
+            </a>
+          </div>
+        </div>
+        </div>
+    </header>
+
+<nav id="colorletra">
+    <ul class="menu">
+        <li><a href="/Comics/Comics.html">Comics</a></li>
+        <li><a href="manga/manga.html">Manga</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="Ofertas.html">Ofertas</a></li>
+    </ul>
+</nav>
+
+<div class="container" > 
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img class=imgc; src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwE5GR2lV7iJSDbqa4EfBh99-6EhFsMMCXEA&usqp=CAU" alt="hombre araña" style="width:300px;">
+      </div>
+
+      <div class="item">
+        <img class=imgc; src="https://hablandodecomics.files.wordpress.com/2012/01/portada-93-hulk.jpg" alt="hulk" style="width:300px;">
+      </div>
+    
+      <div class="item">
+        <img class=imgc; src="https://i0.wp.com/www.lacasadeel.net/wp-content/uploads/2016/05/Portadas-Star-Wars-11.png?fit=416%2C640&ssl=1" alt="star-wars" style="width:300px;">
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+   </div>
+</div>
+
+<section>
+  <div class="pagos">
+    <div class="pagarconmp">
+      <img class="mp" id="Merc" src="MetodosP/mercadopago.png" alt="MP">
+      <h3>Billetera virtual</h3>
+    </div>
+    <div class="pagarcontj">
+      <img class="tarj" src="MetodosP/tajetas.png" alt="tarjetas">
+      <h3>Tarjetas de débito/crédito</h3>
+    </div>
+    <div class="mod">
+      <img class="modo" src="MetodosP/MODO.png" alt="modo1">
+      <h3>MODO</h3>
+    </div>
+    <div class="efvo">
+      <img class="efectivo" src="MetodosP/efectivo.png" alt="efectivo">
+      <h3>Efectivo/Transferencia bancaria</h3>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <div class="Newsletter">
+        <div class="titular">
+        <h2>NEWSLETTER</h2>
+        </div>
+        <div class="Encabezado">
+          <h1>RECIBÍ TODAS LAS OFERTAS</h1>
+        </div>
+        <div class="texto">
+          <h3>¿Quieres recibir nuestras ofertas? ¡Registrate ya mismo y comenzá a disfrutarlas!</h3>
+        </div>
+        <div class="email-box">
+          <input class="tbox" type="email" name="" value="" placeholder="Enter your email">
+          <button class="btn" type="button" name="button">Suscribe</button>
+        </div>
+    </div>
+      </footer>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+     <script src="Tienda.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+     crossorigin="anonymous">
+    </body>
+</html>
