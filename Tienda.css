@@ -21,6 +21,8 @@ header > div.barraprincipal{
         height:10vh;
         list-style: none;
         background-color:rgb(0, 0, 0);
+        position: relative;
+        z-index: 99;
 }
 
 .menu li {
@@ -59,6 +61,27 @@ header > div.barraprincipal{
     padding: 0%;
     margin-block:15px;
    }
+
+   .panel-carrito {
+    position: absolute;
+    right: 0;
+    top: -200px;
+    width: 100px; /* Modifica el ancho del panel a tu preferencia */
+    height: 0;
+    background-color: #e0e0e0c5;
+    border-radius: 10px;
+    padding: 10px;
+    transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
+    z-index: 100;
+  }
+
+  .carro{
+    position: relative;
+    z-index: 999;
+  }
+  
+  
+  
   
 
   #Buscador {
