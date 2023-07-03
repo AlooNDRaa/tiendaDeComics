@@ -63,26 +63,43 @@ header > div.barraprincipal{
    }
 
    .panel-carrito {
-    position: absolute;
-    right: 0;
-    top: -200px;
-    width: 100px; /* Modifica el ancho del panel a tu preferencia */
-    height: 0;
-    background-color: #e0e0e0c5;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    font-family: comic;
+    font-size: 20px;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%; 
+    background-color: #472828;
     border-radius: 10px;
     padding: 10px;
-    transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
-    z-index: 100;
+    transition: right 0.4s ease-in-out;
+    z-index: 9999;
   }
+
+  .Producto-total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+  }
+
+  .envio{
+    display: flex;
+    justify-content:start;
+    margin-top: 70%;
+  }
+
+  .h3{
+    display: flex;
+    justify-content: center;
+  }
+
 
   .carro{
     position: relative;
     z-index: 999;
-  }
-  
-  
-  
-  
+  }  
 
   #Buscador {
   background: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png") no-repeat 0px 5px;

@@ -1,9 +1,16 @@
 body {
-    background-image:url(fondo.jpg);
+    background-image:url(https://raw.githubusercontent.com/AlooNDRaa/Tienda-de-Comics/master/fondo.jpg);
     background-color: black;
     font-family:'Comic Neue', cursive;
     margin: auto;
+    
+}
 
+h1{
+  color: black;
+  font-weight: bolder;
+  font-size: 50px;
+  text-shadow: white 3px 2px 1px;
 }
 
 header > div.barraprincipal{
@@ -11,65 +18,71 @@ header > div.barraprincipal{
   background-color: #000000;
   padding: 5px 5px 5px 5px;
    display: flex;
-   align-items: center;
    justify-content: space-between;
    height: 120px;
 }
 
-.conjunto {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .menu {
-      display: flex;
-      justify-content: center;
-      margin:auto;
-      height:10vh;
-      list-style: none;
-      background-color:rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        height:10vh;
+        list-style: none;
+        background-color:rgb(0, 0, 0);
 }
 
 .menu li {
-  width: 125px;
-  height: 50px;
-  transition: background-position-x 0.9s linear;
-  text-align: center;
+    width: 125px;
+    height: 50px;
+    transition: background-position-x 0.9s linear;
+    text-align: center;
+    }
+  
+    a {
+      font-size: 22px;
+      text-decoration: none ;
+      transition: all 0.45s;
+      color: white !important;
+    }
+
+    .conjunto {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+  .perfil, .carro {
+    display: inline-flex;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
   }
 
-  a {
-    font-size: 22px;
-    text-decoration: none;
-    transition: all 0.45s;
-    color: white !important;
+  .perfil {
+    width: 35px;
+    height: 35px;
+    margin-top:10px;
+   }
+  
+   .carro {
+    width: 75px;
+    height: 75px;
+   }
+  
+   .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+  
+
+  #Buscador {
+  background: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png") no-repeat 0px 5px;
+  background-size: 24px;
+  width: 200px;
+  border:transparent;
+  padding: 10px 10px 10px 30px;
   }
-
-.perfil {
-  width: 35px;
-  height: 35px;
-  margin-top:10px;
- }
-
- .carro {
-  width: 75px;
-  height: 75px;
- }
-
- .icons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
-
-#Buscador {
-background: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png") no-repeat 0px 5px;
-background-size: 24px;
-width: 200px;
-border:transparent;
-padding: 10px 10px 10px 30px;
-overflow: hidden;
-}
 
  .Logopagina{
   height: 100px;
@@ -99,9 +112,11 @@ input {
 
 label{
     display: block;
-    font-size: 18px;
-    color: #616162;
+    font-size: 20px;
+    color: #080808;
+    font-weight: bolder;
     padding: 12px 0 10px 0;
+    text-shadow: white 3px 3px 3px;
 }
 
 .submit-button{
@@ -117,7 +132,6 @@ label{
 .maps {
     margin: 10px 0 20px 0;
 }
-
 iframe {
     overflow-clip-margin: content-box !important;
     border-width: 2px;
@@ -143,14 +157,41 @@ iframe {
     height: 50px;
     width: 50px;
   }
-
+  
   #myBtn:hover {
     background-color: #555; 
   }
 
-h1{
-  font-size: 60px;
-  display:inline-block;
-  background-color: #000000;
-  color: rgb(151, 151, 151);
-}
+
+  .panel-carrito {
+    position: fixed;
+    color: rgb(255, 255, 255);
+    font-family: comic;
+    font-size: 20px;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%; 
+    background-color: #472828;
+    border-radius: 10px;
+    padding: 10px;
+    transition: right 0.4s ease-in-out;
+    z-index: 9999;
+  }
+  
+  .Producto-total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+  }
+  
+  .envio{
+    display: flex;
+    justify-content:start;
+    margin-top: 70%;
+  }
+  
+  .h3{
+    display: flex;
+    justify-content: center;
+  }

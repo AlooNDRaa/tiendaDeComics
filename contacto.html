@@ -12,28 +12,39 @@
 </head>
 <body>
     <header>
-        <div class="barraprincipal">
-          <div class="conjunto">
-            <img src="LOGO/logo_size.jpg" alt="Gato" class="Logopagina">
-            <input type="search" placeholder="Que estas buscando?" id="Buscador" />
-          </div>
-      <div class="contenedor">
-        <div class="icons">
-            <a href="LogIn.html" >
-              <img src="/imagenes/Perfiil.png" alt="Mi cuenta" class="perfil" >
-            </a>
-            <a href="#" >
-                <img src="imagenes/img.png" alt="Carrito" class="carro" >
-            </a>
-          </div>
+      <div class="barraprincipal">
+        <div class="conjunto">
+          <img src="LOGO/logo_size.jpg" alt="Gato" class="Logopagina">
+          <input type="search" placeholder="Que estas buscando?" id="Buscador" />
         </div>
+      <div class="icons">
+          <a href="LogIn.html">
+              <img src="/imagenes/Perfiil.png" alt="Mi cuenta" class="perfil">
+          </a>
+          <a id="icono-compra-container">
+              <img src="imagenes/img.png" alt="Carrito" class="carro">
+          </a>
         </div>
+      </div>
+
+      <div id="panel-carrito" class="panel-carrito">
+        <div class="h3">
+          <h4>Carrito de compras</h4>
+        </div>
+        <div class="Producto-total">
+         <h4>Productos</h4>
+         <h4>Subtotal</h4>
+        </div>
+        <div class="envio">
+          <h3>Total de envio = </h3>
+        </div>
+      </div>
     </header>
 
 <nav id="colorletra">
     <ul class="menu">
         <li><a href="/Comics/Comics.html">Comics</a></li>
-        <li><a href="manga/manga.html">Manga</a></li>
+        <li><a href="manga.html">Manga</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         <li><a href="Ofertas.html">Ofertas</a></li>
     </ul>
@@ -70,7 +81,7 @@
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 
-<script src="contacto.js"></script>
+<script src="Tienda.js"></script>
 
 </body>
 </html>

@@ -2,6 +2,7 @@ body {
   background-image: url(fondo.jpg);
   background-color: black;
     font-family:'Comic Neue', cursive;
+    margin: auto;
 }
 
 header > div.barraprincipal{
@@ -34,6 +35,36 @@ header > div.barraprincipal{
       transition: all 0.45s;
       color: white !important;
     }
+
+    .conjunto {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+.perfil, .carro {
+  display: inline-flex;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.perfil {
+  width: 35px;
+  height: 35px;
+  margin-top:10px;
+ }
+
+ .carro {
+  width: 75px;
+  height: 75px;
+ }
+
+ .icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
 
     a:visited {
       color: white !important;
