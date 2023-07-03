@@ -66,6 +66,31 @@ header > div.barraprincipal{
   align-items: center;
  }
 
+    a:visited {
+      color: white !important;
+    }
+
+  .perfil, .carro {
+    display: inline-flex;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .perfil {
+    width: 35px;
+  height: 35px;}
+
+ .carro{
+  width: 75px;
+  height: 75px;
+  margin-bottom: 16px;
+}
+
+.contenedor{
+  padding: 0%;
+  margin-block:15px;
+ }
 
   #Buscador {
   background: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png") no-repeat 0px 5px;
@@ -84,3 +109,4 @@ header > div.barraprincipal{
  nav {
   font-family:'Comic Neue', cursive;
  }
+
