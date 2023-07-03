@@ -128,5 +128,49 @@ header > div.barraprincipal{
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
-  margin-bottom: 20px;
+  margin-bottom:20px;
+}
+
+.contenedor> div{
+box-shadow: 0px 0px 5px 0px black;
+background-color: rgb(245, 211, 61);
+border-radius: 20px;
+
+}
+.contenedor>div:hover{
+  background-color:rgb(180, 149, 11);
+}
+.informacion{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.informacion>p:first-child{
+font-family: lilita one;
+font-size: 25px;
+font-weight: 300;
+}
+.informacion.precio{
+  font-size: 20px;
+  font-weight: 500;
+}
+.informacion.precio span{
+  font-size: 17px;
+  font-weight: 300;
+}
+.informacion.button{
+  background-color: rgb(220, 20, 143);
+  width: 100px;
+  height: 35;
+  border-radius: 10px;
+  border: none;
+
+  font-size: 17px;
+  font-weight: 30;
+  cursor: pointer;
+}
+.informacion.button:hover{
+  background-color: rgb(248, 126, 201);
 }
