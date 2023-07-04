@@ -35,7 +35,7 @@ iconoCompraContainer.addEventListener('click', (event) => {
 
 document.addEventListener('click', (event) => {
   if (carritoVisible && !event.target.closest('#panel-carrito')) {
-    carrito.style.right = '-400px';
+    carrito.style.right = '-500px';
     carritoVisible = false;
   }
 });
