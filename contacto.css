@@ -1,5 +1,5 @@
 body {
-    background-image:url(https://raw.githubusercontent.com/AlooNDRaa/Tienda-de-Comics/master/fondo.jpg);
+    background-image:url("fondo.jpg");
     background-color: black;
     font-family:'Comic Neue', cursive;
     margin: auto;
