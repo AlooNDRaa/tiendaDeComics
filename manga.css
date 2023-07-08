@@ -188,6 +188,7 @@ h3, h4{
   flex-wrap: wrap;
   gap: 50px;
   margin-bottom:20px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .contenedor> div{
@@ -232,4 +233,11 @@ font-weight: 300;
 }
 .informacion.button:hover{
   background-color: rgb(248, 126, 201);
+}
+.gatosuper{
+  width: 50px;
+  border-radius: 35px;
+  position: fixed;
+  left: 20px;
+  bottom: 100px;
 }
