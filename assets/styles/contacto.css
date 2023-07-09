@@ -1,5 +1,5 @@
 body {
-    background-image:url("fondo.jpg");
+    background-image:url(/assets/images/fondo.jpg);
     background-color: black;
     font-family:'Comic Neue', cursive;
     margin: auto;

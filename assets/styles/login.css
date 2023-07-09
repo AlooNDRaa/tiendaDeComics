@@ -1,13 +1,13 @@
 body {
     font-family: arial;
-    background-image:url(fondo.jpg);
+    background-image:url(/assets/images/fondo.jpg);
     margin: 0;
     margin-bottom: 30px;
   }
   
-  .form-crearUsuario {
+  .form-login {
     width: 400px;
-    height: 390px;
+    height: 340px;
     background: #21238d;
     margin: auto;
     margin-top: 110px;
@@ -18,7 +18,7 @@ body {
     color: white;
   }
   
-  .form-crearUsuario h5 {
+  .form-login h5 {
     margin: 0;
     text-align: center;
     height: 40px;
@@ -28,7 +28,7 @@ body {
   }
   
   .controls {
-    width: 94%;
+    width: 95%;
     border: 1px solid #0159ab;
     margin-bottom: 15px;
     padding: 11px 10px;
@@ -49,28 +49,45 @@ body {
     font-weight: bold;
   }
   
+  .form-login p {
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+  
+  .form-login a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .form-login a:hover {
+  text-decoration: underline;
+  }
+
   header > div.barraprincipal {
-    height: 20%;
-    width: 100%;
-    background-color: #000000;
-    padding: 5px 5px 5px 5px;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: flex-start;
-     height: 120px;
-     
-  
-    }
-  
-  
-   .Logopagina{
-    display: flex;
-    justify-content: left;
-    height: 100px;
-    width: 100px;
-    border-radius:50px;
-    margin-top: 10px;
-    margin-left: 30px;
-   }
+  height: 20%;
+  width: 100%;
+  background-color: #000000;
+  padding: 5px 5px 5px 5px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   height: 120px;
+   
+
+  }
+
+
+ .Logopagina{
+  display: flex;
+  justify-content: left;
+  height: 100px;
+  width: 100px;
+  border-radius:50px;
+  margin-top: 10px;
+  margin-left: 30px;
+ }
+
  
