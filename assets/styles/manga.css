@@ -235,9 +235,9 @@ font-weight: 300;
   background-color: rgb(248, 126, 201);
 }
 .gatosuper{
-  width: 50px;
+  width: 80px;
   border-radius: 35px;
   position: fixed;
   left: 20px;
-  bottom: 100px;
+  bottom: 25px;
 }
