@@ -1,6 +1,6 @@
 body {
     font-family: arial;
-    background-image:url(fondo.jpg);
+    background-image:url(../images/fondo.jpg);
     margin: 0;
     margin-bottom: 30px;
   }
