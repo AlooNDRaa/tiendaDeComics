@@ -1,5 +1,10 @@
 body {
+<<<<<<< HEAD
     background-color: white;
+=======
+    background-image:url("fondo.jpg");
+    background-color: black;
+>>>>>>> 4bc5ee8e8088bb2303af00b39e3f39e1c15d238a
     font-family:'Comic Neue', cursive;
     margin: auto;
     
