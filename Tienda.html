@@ -12,7 +12,7 @@
     </head>
 
     <body>
-      
+    
     <header>
         <div class="barraprincipal">
           <div class="buscador">
@@ -26,6 +26,7 @@
             </a>
             <a id="icono-compra-container" >
                 <img src="/assets/images/iconos/img.png" alt="Carrito" class="carro" >
+                <div id="numero"></div>
             </a>
           </div>
         </div>
@@ -33,20 +34,23 @@
 
         <div id="panel-carrito" class="panel-carrito">
           <div class="h3">
-            <h4>Carrito de compras</h4>
+            <h4>Sus Productos</h4>
           </div>
-          <div class="Producto-total">
-           <h4>Productos</h4>
-           <h4>Subtotal</h4>
+          <div class="cesta">
+           <h4>Cesta</h4>
           </div>
-          <div class="envio">
-            <h3>Total de envio = </h3>
+          <div class="valoor" id="display-valor">
+            <h4>Valor total = </h4>
           </div>
+          <div class="compra">
+            <button class="compra">Finalizar compra</button>
+          </div>
+
         </div>
     </header>
 
 <nav id="colorletra">
-    <ul class="menu">
+    <ul class="menu" id="dropbtn">
         <li class="dropdown">
           <a href="/assets/pages/Comics.html">Comics</a>
           <div class="dropdown-content">
@@ -71,7 +75,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <a href="/assets/pages/contacto.html" class="dropbtn">Contacto</a>
+          <a href="/assets/pages/contacto.html" >Contacto</a>
           <div class="dropdown-content">
               <a href="#">¿Quienes somos?</a>
               <a href="#">Preguntas Frecuentes</a>

@@ -27,15 +27,18 @@
 
         <div id="panel-carrito" class="panel-carrito">
           <div class="h3">
-            <h4>Carrito de compras</h4>
+            <h4>Sus Productos</h4>
           </div>
-          <div class="Producto-total">
-           <h4>Productos</h4>
-           <h4>Subtotal</h4>
+          <div class="cesta">
+           <h4>Cesta</h4>
           </div>
-          <div class="envio">
-            <h4 class="subtt">Total de envio = </h4>
+          <div class="valoor" id="display-valor">
+            <h4>Valor total = </h4>
           </div>
+          <div class="compra">
+            <button class="compra">Finalizar compra</button>
+          </div>
+
       </div>
     
     </header>
@@ -49,144 +52,148 @@
     </ul>
 </nav>
 
-<section class="primer-slide">
-    <div>
-        <h3>Month's OFFER</h3>
-    </div>
+<h1>¡¡¡Ofertas del Mes!!!</h1>
 
-    <div class="wrapper">
-        <div class="slider" id="slider">
-          <ul class="slides">
-            <li class="slide" id="slide1">
-              <a href="#">
-                <img
-                src="/assets/images/ofers-img/poster1.jpg"
-                alt="photo 1"
-                data-id="">
-              </a>
-            </li>
-            <li class="slide" id="slide2">
-              <a href="#">
-                <img src="/assets/images/ofers-img/poster2.jpg" alt="photo 2">
-              </a>
-            </li>
-            <li class="slide" id="slide3">
-              <a href="#">
-                <img src="/assets/images/ofers-img/poster3.jpg" alt="photo 3">
-              </a>
-            </li>
-            <li class="slide" id="slide4">
-              <a href="#">
-                <img src="/assets/images/ofers-img/poster4.jpg" alt="photo 4">
-              </a>
-            </li>
-            <li class="slide" id="slide5">
-              <a href="#">
-                 <img src="/assets/images/ofers-img/poster5.jpg" alt="photo 5">
-              </a>
-            </li>
-            <li class="slide" id="slide6">
-              <a href="#">
-                <img src="/assets/images/ofers-img/poster6.jpg" alt="photo 6">
-              </a>
-            </li>
-            <li class="slide" id="slide7">
-                <a href="#">
-                  <img src="/assets/images/ofers-img/poster7.jpg" alt="photo 7">
-                </a>
-              </li>
-              <li class="slide" id="slide8">
-                <a href="#">
-                  <img src="/assets/images/ofers-img/poster8.jpg" alt="photo 8">
-                </a>
-              </li>
-          </ul>
-          <ul class="slider-controler">
-            <li><a href="#slide1">&bullet;</a></li>
-            <li><a href="#slide2">&bullet;</a></li>
-            <li><a href="#slide3">&bullet;</a></li>
-            <li><a href="#slide4">&bullet;</a></li>
-            <li><a href="#slide5">&bullet;</a></li>
-            <li><a href="#slide6">&bullet;</a></li>
-            <li><a href="#slide7">&bullet;</a></li>
-            <li><a href="#slide8">&bullet;</a></li>
-          </ul>
-        </div>
-      </div>
-
-</section>
-
-<div>
-        <h3>Horror Stock</h3>
-    </div>
-
-<section class="segundo-slide">
-    <div class="slider" id="slider" >
-        <ul class="slides">
-            <li class="slide" id="slide9">
-                <a href="#">
-                    <img src="/assets/images/horrorimg/horror1.jpg" alt="photo9">
-                </a>
-            </li>
-            <li class="slide" id="slide10">
-                <a href="#">
-                    <img src="/assets/images/horrorimg/horror2.jpg" alt="photo10">
-                </a>
-            </li>
-            <li class="slide" id="slide11">
-                <a href="#">
-                    <img src="/assets/images/horrorimg/horror3.jpg" alt="photo11">
-                </a>
-            </li>
-            <li class="slide" id="slide12">
-                <a href="#">
-                    <img src="/assets/images/horrorimg/horror4.jpg" alt="photo12">
-                </a>
-            </li>
-            <li class="slide" id="slide13">
-                <a href="#">
-                    <img src="/assets/images/horrorimg/horror5.jpg" alt="photo13">
-                </a>
-            </li>
-            <li class="slide" id="slide14">
-                <a href="#">
-                    <img src="/assets/images/horrorimg/horror6.jpg" alt="photo14">
-                </a>
-            </li>
-            <li class="slide" id="slide15">
-                <a href="#">
-                    <img src="/assets/images/horrorimg/horror7.jpg" alt="photo15">
-                </a>
-            </li>
-            <li class="slide" id="slide16">
-                <a href="#">
-                    <img src="/assets/images/horrorimg/horror8.jpg" alt="photo16">
-                </a>
-            </li>
-        </ul>
-        <ul class="slider-controler">
-            <li><a href="#slide9">&bullet;</a></li>
-            <li><a href="#slide10">&bullet;</a></li>
-            <li><a href="#slide11">&bullet;</a></li>
-            <li><a href="#slide12">&bullet;</a></li>
-            <li><a href="#slide13">&bullet;</a></li>
-            <li><a href="#slide14">&bullet;</a></li>
-            <li><a href="#slide15">&bullet;</a></li>
-            <li><a href="#slide16">&bullet;</a></li>
-        </ul>
-    </div>
-
-<h3>Compra ya y ¡¡OBTIENES UNA SORPRESA!!</h3>
-
-<div class="card">
+<main class="contenedor-tarjeta">
   <article class="tarjeta">
-    <img
-    class="offer1"
-    src="/assets/images/ofers-img/poster5.jpg"
-    alt="post5">
-
+    <img 
+      class="comic-img"
+      src="../images/ofers-img/Blue-Lock.webp" 
+      alt="Blue lock #1" 
+    />
+    <div class="comic-descripcion">
+      <h2 class="comic-titulo">
+        Blue Lock #1
+      </h2>
+      <div class="comic-compra">
+        <p class="before-price">
+          $2.800
+        </p>
+        <p class="comic-precio">
+          $1.750
+        </p>
+        <button class="comic-boton">
+          Añadir al carrito
+        </button>
+      </div> 
+    </div>
   </article>
-</div>
+  <article class="tarjeta">
+    <img 
+      class="comic-img"
+      src="../images/ofers-img/Jujutsu-kaisen8.webp" 
+      alt="J-k #8" 
+    />
+    <div class="comic-descripcion">
+      <h2 class="comic-titulo">
+        Jujutsu Kaisen #8
+      </h2>
+      <div class="comic-compra">
+        <p class="before-price">
+          $3.500
+        </p>
+        <p class="comic-precio">
+          $2.000
+        </p>
+        <button class="comic-boton">
+          Añadir al carrito
+        </button>
+      </div> 
+    </div>
+  </article>
+  <article class="tarjeta">
+    <img 
+      class="comic-img"
+      src="../images/ofers-img/Kaichou-wa-maid-sama.gif" 
+      alt="Kaichou-wa-maid-sama #16" 
+    />
+    <div class="comic-descripcion">
+      <h2 class="comic-titulo">
+        Kaichou wa ms #16
+      </h2>
+      <div class="comic-compra">
+        <p class="before-price">
+          $2.000
+        </p>
+        <p class="comic-precio">
+          $1.450
+        </p>
+        <button class="comic-boton">
+          Añadir al carrito
+        </button>
+      </div> 
+    </div>
+  </article>
+  <article class="tarjeta">
+    <img 
+      class="comic-img"
+      src="../images/ofers-img/Sakura-cc.webp" 
+      alt="Sakura card captor #5" 
+    />
+    <div class="comic-descripcion">
+      <h2 class="comic-titulo">
+        Sakura Card.C #5
+      </h2>
+      <div class="comic-compra">
+        <p class="before-price">
+          $2.550
+        </p>
+        <p class="comic-precio">
+          $1.650
+        </p>
+        <button class="comic-boton">
+          Añadir al carrito
+        </button>
+      </div> 
+    </div>
+  </article>
+  <article class="tarjeta">
+    <img 
+      class="comic-img"
+      src="../images/ofers-img/Kimetsu_no_Yaiba_V5.webp" 
+      alt="Kimetsu_no_Yaiba #5" 
+    />
+    <div class="comic-descripcion">
+      <h2 class="comic-titulo">
+        Kimetsu no Yaiba #5
+      </h2>
+      <div class="comic-compra">
+        <p class="before-price">
+          $4.500
+        </p>
+        <p class="comic-precio">
+          $3.000
+        </p>
+        <button class="comic-boton">
+          Añadir al carrito
+        </button>
+      </div> 
+    </div>
+  </article>
+  <article class="tarjeta">
+    <img 
+      class="comic-img"
+      src="../images/ofers-img/Batman-detective.jpg" 
+      alt="Batman-detective #9" 
+    />
+    <div class="comic-descripcion">
+      <h2 class="comic-titulo">
+        Batman detective #9
+      </h2>
+      <div class="comic-compra">
+        <p class="before-price">
+          $7.500
+        </p>
+        <p class="comic-precio">
+          $4.000
+        </p>
+        <button class="comic-boton">
+          Añadir al carrito
+        </button>
+      </div> 
+    </div>
+  </article>
+</main>
 
 <footer>
   <div class="Newsletter">
