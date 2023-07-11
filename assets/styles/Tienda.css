@@ -91,11 +91,6 @@ header > div.barraprincipal{
     display: block;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #b47f0e;
-}
-
-
 
    .panel-carrito {
     position: fixed;
@@ -143,7 +138,6 @@ header > div.barraprincipal{
     background-color: white;
     color: #000000;
     transition: 0.8s;
-    box-shadow: 3px 3px 3px #b47f0e;
   }
 
   .carro{
