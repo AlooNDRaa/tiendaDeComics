@@ -39,3 +39,57 @@ document.addEventListener('click', (event) => {
     carritoVisible = false;
   }
 });
+
+
+// Comienzo de agregar productos al carrito//
+
+/*/const addToShoppingCardButtons = document.querySelectorAll('Button')
+addToShoppingCardButtons.forEach(addToCardButton => {
+  addToCardButton.addEventListener('click', addToCardClicked)
+})
+
+function addToCardClicked(event){
+  const button = event.target;
+  const Card = button.closest('.card');
+
+
+  const CardTitle = Card.querySelector('.card-title').textContent;
+  const CardPrice = Card.querySelector('.card-price').textContent;
+  const CardImage = Card.querySelector('.card-img').src;
+  console.log('addToCardClicked -> CardTitle',
+  CardTitle,
+  CardPrice,
+  CardImage)
+
+
+addCardToShoppingCart(CardTitle, CardPrice, CardImage);
+}
+
+function addCardToShoppingCart(CardTitle, CardPrice, CardImage) {
+ const ShoppingCartRow = document.createElement('div')
+ const ShoppingCartContent = `
+ <div class="card">
+  <div class="image-container">
+  <img src=${CardImage} 
+    alt="Jujutsu-kaisen #8"
+    class="card-img">
+  </div>
+  <h4 class="card-title">
+    ${CardTitle}
+  </h4>
+  <div class="prices">
+    <span class="before-price" id="before-price">$4.000</span>
+    <span class="card-price" id="price">${CardPrice}</span>
+  </div>
+  <div class="btnn" id="buttn">
+  <button class="card-button">
+    Añadir al carrito
+  </button>
+  </div>
+</div>
+ `
+
+ ShoppingCart.innerHTML = ShoppingCartContent
+ ShoppingCartCardsconatiner.append(ShoppingCartRow)
+}/*/
+

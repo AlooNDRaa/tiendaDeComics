@@ -113,13 +113,20 @@ header > div.barraprincipal{
   margin-top: 2rem;
 }
 
-.compra{
+#cart-button{
   display:flex;
-  justify-content: center;
-  padding: 1.5rem;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 1rem;
   border: none;
   border-radius: 10px;
-  margin-top: 2rem;
+  margin-top: 8rem;
+}
+
+#carro-texto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button{
@@ -138,11 +145,6 @@ button:hover{
   position: relative;
   z-index: 999;
 }  
-
-.h3{
-  display: flex;
-  justify-content: center;
-}
 
 #Buscador {
 background: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png") no-repeat 0px 5px;
@@ -237,7 +239,7 @@ img {
   margin-top: 5%;
 }
 
-.card .price{
+.card #price{
   font-size: 18px;
   color: #000000;
   font-weight: bolder;
@@ -324,21 +326,19 @@ margin-top: 40px;
 }
 .email-box:hover > .tbox,.tbox:focus {
   width: 260px;
-  padding: 0 10px;
+  padding: 10px 0;
 }
 .btn {
-  background: #f35c20 !important;
-  color: rgb(255, 255, 255) !important;
-  padding: 0 10px;
+  background: #f35c20 ;
+  color: rgb(255, 255, 255);
+  padding: 10px 0;
   text-transform: uppercase;
   cursor: pointer;
+  transition: 0.7s;
 }
 
 h3 {
 font-size: 35px;
-display: block;
-background-color: #000000;
-color: aliceblue;
 text-align: center;
 font-family:'Comic Neue', cursive;
 }
