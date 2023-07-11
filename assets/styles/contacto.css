@@ -1,21 +1,29 @@
 body {
-    background-color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../images/fondo.jpg);
     font-family:'Comic Neue', cursive;
-    margin: auto;
-    
+    margin: auto;    
 }
 
-.titulo{
-  color: black;
+.titulo1{
+  color: white;
   font-weight: bolder;
   font-size: 30px;
-  text-shadow: white 3px 2px 1px;
+  text-shadow: grey 3px 2px 1px;
+  text-align: center; 
 }
-.texto{
-  color: black;
-  font-weight: 30px;
-  font-weight: bold;
+.titulo{
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+  text-shadow: grey 3px 2px 1px;
+  text-align: start;
+}
 
+.texto{
+  color: white;
+  font-weight: 30px;
+  font-weight: bolder;
+  text-align: center; 
 }
 
 header > div.barraprincipal{
@@ -100,7 +108,7 @@ header > div.barraprincipal{
  }
 
  form {
-    display: block;
+    
     margin-top: 0em;
     position: relative;
     min-height: 1px;
@@ -110,24 +118,25 @@ header > div.barraprincipal{
 }
 input {
     width: 50%;
-    border: solid 1px #77777a;
+    border: solid 1px #38383a;
     padding: 10px;
-    font-size: 16px;   
+    font-size: 16px;
+    align-items: start;  
 }
 
 label{
-    display: block;
     font-size: 20px;
-    color: #080808;
+    color: rgb(245, 242, 242);
     font-weight: bolder;
     padding: 12px 0 10px 0;
-    text-shadow: white 3px 3px 3px;
+    text-shadow: gray 3px 3px 3px;
+    text-align: start;
 }
 
 .submit-button{
-    background-color: black;
+    background-color: white;
     border: none;
-    color: white;
+    color: black;
     text-align: center;
 }
 .submit-button:hover{
@@ -138,13 +147,15 @@ label{
     margin: 10px 0 20px 0;
 }
 
+
 .iframe {
-    overflow-clip-margin: content-box ;
     border-width: 2px;
     border-style: inset;
     border-color: initial;
     border-image: initial;
     overflow: clip !important;
+    box-sizing: content-box;
+    
 }
 #myBtn {
     display: none; 
