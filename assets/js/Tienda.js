@@ -39,7 +39,3 @@ document.addEventListener('click', (event) => {
     carritoVisible = false;
   }
 });
-
-
-
-
