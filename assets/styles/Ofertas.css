@@ -21,7 +21,6 @@ header > div.barraprincipal{
   align-items: center;
 }
 
-
 .menu {
       display: flex;
       justify-content: center;
@@ -106,8 +105,6 @@ header > div.barraprincipal{
   z-index: 9999;
 }
 
-
-
 #cart-button{
   display:flex;
   justify-content: space-between;
@@ -178,7 +175,6 @@ height: 100px;
 width: 100px;
 border-radius:50px;
 }
-
 
 img {
   backface-visibility: hidden;
