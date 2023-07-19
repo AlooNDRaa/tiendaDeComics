@@ -14,9 +14,10 @@ body {
 .titulo{
   color: white;
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 20px;
   text-shadow: grey 3px 2px 1px;
   text-align: start;
+  padding-left: 10px;
 }
 
 .texto{
@@ -77,10 +78,6 @@ header > div.barraprincipal{
     margin-top:10px;
    }
   
-   .carro {
-    width: 75px;
-    height: 75px;
-   }
   
    .icons{
     display: flex;
@@ -115,8 +112,6 @@ header > div.barraprincipal{
     padding-left: 15px;
     box-sizing: border-box;
   
-
-  
 }
 input {
     width: 500px;
@@ -140,6 +135,7 @@ label{
     border: none;
     color: black;
     text-align: center;
+    margin: 10px;
 }
 .submit-button:hover{
     box-shadow: 5px 10px 18px #888888;;
@@ -151,7 +147,7 @@ label{
  flex-direction: row;
  flex-wrap: nowrap;
  align-items: center;
-
+align-content: center;
 }
 
 .iframe {
@@ -182,40 +178,12 @@ label{
   #myBtn:hover {
     background-color: #555; 
   }
-
-
-  .panel-carrito {
-    position: fixed;
-    color: rgb(255, 255, 255);
-    font-family: comic;
-    font-size: 20px;
-    top: 0;
-    right: -400px;
-    width: 400px;
-    height: 100%; 
-    background-color: #472828;
-    border-radius: 10px;
-    padding: 10px;
-    transition: right 0.4s ease-in-out;
-    z-index: 9999;
-  }
-  
-  .Producto-total{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10%;
-  }
-  
-  .envio{
-    display: flex;
-    justify-content:start;
-    margin-top: 70%;
-  }
   
   .h3{
     display: flex;
     justify-content: center;
   }
+
   footer {
     background-color: black;
     color: white;
@@ -228,21 +196,20 @@ label{
     bottom: 0;
   }
   
-  
   .titular {
     text-align: center;
     margin-bottom: 30px;
     margin-top: 0px;
-    
   }
+
   .Encabezado {
     text-align: center;
     margin-bottom: 15px;
-    
   }
   .texto {
     text-align: center;
   }
+
   .email-box {
   display: flex;
   justify-content: center;
