@@ -96,13 +96,10 @@ a {
   font-family: comic;
   top: 0;
   right: -500px;
-<<<<<<< HEAD
   width: 400px; /*utilizar unidades relativas!!*/
   height: 100%; 
-=======
   width: 400px;
   height: 100%;
->>>>>>> c4f52aaf11392198ae69a1ab033b51b284cd63d5
   background-color: rgb(245, 211, 61);
   border-radius: 10px;
   padding: 10px;
