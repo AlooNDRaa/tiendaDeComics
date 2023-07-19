@@ -89,17 +89,14 @@ a {
   align-items: center;
 }
 
-
 .panel-carrito {
   position: fixed;
   color: rgb(0, 0, 0);
   font-family: comic;
   top: 0;
-  right: -500px;
-  width: 400px; /*utilizar unidades relativas!!*/
+  right:-100%;
+  width: 25%; /*utilizar unidades relativas!!*/
   height: 100%; 
-  width: 400px;
-  height: 100%;
   background-color: rgb(245, 211, 61);
   border-radius: 10px;
   padding: 10px;
@@ -107,11 +104,51 @@ a {
   z-index: 9999;
 }
 
-#cart-button {
+.tit{
+  font-size: (1.375rem + 1.5vw)
+}
+
+.display2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  height: 300px;
+  width:75%;
+  background-color: #b47f0ed8;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.display2 img {
+  width: 70px; /* Tamaño deseado para las imágenes en display2 */
+  height: 70px;
+  margin-left:2%;
+}
+
+.valor-total{
+  width: 50%;
+  height: 50px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #755308;
+  color: #000000;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.display2 span{
+  display: inline;
+  font-size: 10px;
+  margin-left:5%;
+}
+
+#cart-buttoon {
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
-  padding: 1rem;
+  font-size:20px;
   border: none;
   border-radius: 10px;
 }
@@ -123,13 +160,14 @@ a {
   font-size: 16px;
 }
 
-button {
-  background-color: #b47f0e;
+#cart-button {
+  background-color: #bb830b;
   box-shadow: 2px 2px 2px black;
   cursor: pointer;
+  border: none;
 }
 
-button:hover {
+#cart-button:hover {
   background-color: white;
   color: #000000;
   transition: 0.8s;
@@ -284,10 +322,6 @@ footer {
   margin-bottom: 15px;
 }
 
-.texto {
-  text-align: center;
-}
-
 .email-box {
   display: flex;
   justify-content: center;
@@ -322,7 +356,7 @@ footer {
   transition: 0.7s;
 }
 
-h3 {
+.division {
   font-size: 35px;
   text-align: center;
   font-family: 'Comic Neue', cursive;
@@ -510,6 +544,18 @@ h3 {
     justify-content: space-between;
   }
   
+  .panel-carrito{
+      width: 50%;
+      height: 80%; 
+      background-color: rgb(245, 211, 61);
+  }
+ 
+  #cart-buttoon {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+
   .Logopagina {
     height: 50px;
     width: 50px;
@@ -608,48 +654,3 @@ h3 {
   }
 }
 
-<<<<<<< HEAD
-.tit{
-  font-size: (1.375rem + 1.5vw)
-}
-
-
-.display2{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: auto;
-  height: 300px;
-  width: 300px;
-  background-color: #b47f0ed8;
-  border-radius: 10px;
-  overflow-y: auto;
-}
-
-.display2 img {
-  width: 50px; /* Tamaño deseado para las imágenes en display2 */
-  height: 50px;
-  margin-left:2%;
-}
-
-.valor-total{
-  width: 200px;
-  height: 50px;
-  margin: 10px;
-  border-radius: 10px;
-  background-color: #755308;
-  color: #000000;
-  font-size: 15px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.display2 span{
-  display: inline;
-  font-size: 10px;
-  margin-left:5%;
-}
-
-=======
->>>>>>> c4f52aaf11392198ae69a1ab033b51b284cd63d5
