@@ -96,7 +96,7 @@ header > div.barraprincipal{
   font-family: comic;
   top: 0;
   right: -500px;
-  width: 400px;
+  width: 400px; /*utilizar unidades relativas!!*/
   height: 100%; 
   background-color: rgb(245, 211, 61);
   border-radius: 10px;
