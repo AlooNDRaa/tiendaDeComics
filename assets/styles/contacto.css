@@ -8,14 +8,12 @@ body {
   color: white;
   font-weight: bolder;
   font-size: 30px;
-  text-shadow: grey 3px 2px 1px;
   text-align: center; 
 }
 .titulo{
   color: white;
   font-weight: bolder;
   font-size: 20px;
-  text-shadow: grey 3px 2px 1px;
   text-align: start;
   padding-left: 10px;
 }
@@ -65,18 +63,13 @@ header > div.barraprincipal{
         align-items: center;
       }
 
-  .perfil, .carro {
+  .perfil {
     display: inline-flex;
     border-radius: 30px;
-    width: 30px;
-    height: 30px;
-  }
-
-  .perfil {
     width: 35px;
     height: 35px;
     margin-top:10px;
-   }
+  }
   
   
    .icons{
@@ -85,7 +78,6 @@ header > div.barraprincipal{
     align-items: center;
    }
   
-
   #Buscador {
   background: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png") no-repeat 0px 5px;
   background-size: 24px;
@@ -136,6 +128,7 @@ label{
     color: black;
     text-align: center;
     margin: 10px;
+ 
 }
 .submit-button:hover{
     box-shadow: 5px 10px 18px #888888;;
@@ -147,7 +140,8 @@ label{
  flex-direction: row;
  flex-wrap: nowrap;
  align-items: center;
-align-content: center;
+ align-content: center;
+ margin: 20px;
 }
 
 .iframe {
