@@ -6,11 +6,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/global.css">
     <title>Coders Comics:Manga</title>
 </head>
 <style>
@@ -35,17 +36,21 @@
           </div>
 
           <div id="panel-carrito" class="panel-carrito">
-            <div class="h3">
-              <h4>Carrito de compras</h4>
+            <div class="Text-center" id="carro-texto">
+              <h4>Sus Productos</h4>
+            <div class="informacion-compra" id="informacion-compra">
+             <h4>Cesta</h4>
             </div>
-            <div class="Producto-total">
-             <h4>Productos</h4>
-             <h4>Subtotal</h4>
+            <div class="display2">
+              <div class="product-container"></div>
             </div>
-            <div class="envio">
-              <h3>Total de envio = </h3>
+              <div class="valor-total"></div>
             </div>
-          </div>
+            <div class="compra" id="cart-buttoon">
+              <button class="compra1" id="boton-carro">Finalizar compra</button>
+              <button class="borrar-compra" id="boton-carro">Vaciar carrito</button>
+            </div>
+        </div>
           
     </header>
     
@@ -111,7 +116,8 @@
 
  <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
  
-<script src="../../assets/js/manga.js"></script>  
+<script src="../../assets/js/manga.js"></script>
+<script src="/assets/js/Tienda.js"></script>
 </body>
 </html>
 

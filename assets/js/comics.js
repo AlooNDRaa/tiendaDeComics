@@ -33,14 +33,14 @@ iconoCompraContainer.addEventListener('click', (event) => {
     carrito.style.right = '0';
     carritoVisible = true;
   } else {
-    carrito.style.right = '-300px';
+    carrito.style.right = '-50%';
     carritoVisible = false;
   }
 });
 
 document.addEventListener('click', (event) => {
   if (carritoVisible && !event.target.closest('#panel-carrito')) {
-    carrito.style.right = '-500px';
+    carrito.style.right = '-50%';
     carritoVisible = false;
   }
 });

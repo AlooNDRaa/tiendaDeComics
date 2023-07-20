@@ -93,49 +93,6 @@
     margin-bottom: 16px;
   }
   
-  .panel-carrito {
-    position: fixed;
-    color: rgb(255, 255, 255);
-    font-family: comic;
-    font-size: 20px;
-    top: 0;
-    right: -500px;
-    width: 400px;
-    height: 100%;
-    background-color: #472828;
-    border-radius: 10px;
-    padding: 10px;
-    transition: right 0.4s ease-in-out;
-    z-index: 9999;
-  }
-  
-  .Producto-total {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10%;
-  }
-  
-  .envio {
-    display: flex;
-    justify-content: start;
-    margin-top: 70%;
-  }
-  
-  .carro {
-    position: relative;
-    z-index: 999;
-  }
-  
-  h3,
-  h4 {
-    color: aliceblue;
-  }
-  
-  .contenedor {
-    padding: 0%;
-    margin-block: 15px;
-  }
-  
   #Buscador {
     background: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png")
       no-repeat 0px 5px;
@@ -176,3 +133,5 @@
   #myBtn:hover {
     background-color: rgb(245, 211, 61); 
   }
+
+  
