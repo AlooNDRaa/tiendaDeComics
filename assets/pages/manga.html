@@ -20,35 +20,38 @@
     <header>
         <div class="barraprincipal">
             <div class="conjunto">
-            <a href="Tienda.html"></a>
+            <a href="index.html"></a>
               <img src="/assets/images/LOGO/logo_size.jpg" alt="Gato" class="Logopagina">
               <input type="search" placeholder="Que estas buscando?" id="Buscador" />
             </div>
           <div class="icons">
               <a href="LogIn.html">
-                  <img src="/assets/images/imagenes/Perfiil.png" alt="Mi cuenta" class="perfil">
+                  <img src="/assets/images/iconos/Perfiil.png" alt="Mi cuenta" class="perfil">
               </a>
               <a id="icono-compra-container">
-                  <img src="/assets/images/imagenes/img.png" alt="Carrito" class="carro">
+                  <img src="/assets/images/iconos/img.png" alt="Carrito" class="carro">
               </a>
             </div>
           </div>
 
           <div id="panel-carrito" class="panel-carrito">
-            <div class="h3">
-              <h4>Carrito de compras</h4>
+            <div class="Text-center" id="carro-texto">
+              <h4>Sus Productos</h4>
+            <div class="informacion-compra" id="informacion-compra">
+             <h4>Cesta</h4>
             </div>
-            <div class="Producto-total">
-             <h4>Productos</h4>
-             <h4>Subtotal</h4>
+            <div class="display2">
+              <div class="product-container"></div>
             </div>
-            <div class="envio">
-              <h3>Total de envio = </h3>
+              <div class="valor-total"></div>
             </div>
-          </div>
+            <div class="compra" id="cart-buttoon">
+              <button class="compra1" id="boton-carro">Finalizar compra</button>
+              <button class="borrar-compra" id="boton-carro">Vaciar carrito</button>
+            </div>
+        </div>
           
     </header>
-    
 
 <nav id="colorletra">
     <ul class="menu">
@@ -221,10 +224,6 @@
       </div>
     </article>
   </main>
-
- <a target href="../../index.html">
-    <img class="gatosuper" src="../../LOGO/gato amarillo.jpeg">
- </a>
 
  <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
  
