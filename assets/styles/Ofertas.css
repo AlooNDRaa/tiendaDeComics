@@ -1,5 +1,5 @@
 body {
-  background-image: url(/assets/images/fondo.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../images/fondo.jpg);
   background-color: black;
   font-family: 'Comic Neue', cursive;
   margin: auto;
@@ -13,6 +13,7 @@ header > div.barraprincipal {
   align-items: center;
   justify-content: space-between;
   height: 120px;
+  margin: auto;
 }
 
 .conjunto {
@@ -36,6 +37,7 @@ header > div.barraprincipal {
   height: 50px;
   transition: background-position-x 0.9s linear;
   text-align: center;
+  gap: 5%;
 }
 
 a {
@@ -69,7 +71,9 @@ a {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .perfil {
@@ -90,16 +94,15 @@ a {
 }
 
 .panel-carrito {
-  position: fixed;
+  position: absolute;
   color: rgb(0, 0, 0);
   font-family: comic;
   top: 0;
   right:-100%;
-  width: 25%; /*utilizar unidades relativas!!*/
-  height: 100%; 
+  width: 45%; /*utilizar unidades relativas!!*/
+  height:100%;
   background-color: rgb(245, 211, 61);
   border-radius: 10px;
-  padding: 10px;
   transition: right 0.50s ease-in-out;
   z-index: 9999;
 }
@@ -145,12 +148,9 @@ a {
   margin-left:5%;
 }
 
-#cart-buttoon {
+.compra{
   display: flex;
-  justify-content: space-between;
-  font-size:20px;
-  border: none;
-  border-radius: 10px;
+  justify-content: space-around;
 }
 
 #carro-texto {
@@ -160,14 +160,16 @@ a {
   font-size: 16px;
 }
 
-#cart-button {
+#boton-carro {
   background-color: #bb830b;
   box-shadow: 2px 2px 2px black;
   cursor: pointer;
   border: none;
+  border-radius: 10px;
+  padding: 5%;
 }
 
-#cart-button:hover {
+#boton-carro:hover {
   background-color: white;
   color: #000000;
   transition: 0.8s;
@@ -235,7 +237,7 @@ img {
 
 .card {
   width: 320px;
-  height: 620px;
+  height: 500px;
   background-color: rgb(245, 211, 61);
   border-radius: 15px;
   text-align: center;
@@ -243,7 +245,7 @@ img {
 
 .card img {
   width: 100%;
-  max-height: 350px;
+  max-height:250px;
   object-fit: cover;
   border-radius: 12px 12px 0px 0px;
 }
@@ -404,8 +406,8 @@ footer {
   }
   
   .dropdown-content {
-    position: static;
-    background-color: transparent;
+    position: relative;
+    background-color: black;
     min-width: auto;
     box-shadow: none;
   }
@@ -418,14 +420,14 @@ footer {
   }
 
   .card {
-    width: 50%;
+    width:auto;
     height: auto;
-    max-height: none;
     margin-bottom:5%;
   }
   
   .card img {
-    max-height: 250px;
+    object-fit: cover;
+    min-height:500px;
     border-radius: 12px;
   }
   
@@ -451,7 +453,7 @@ footer {
 }
 
 /* Estilos para pantallas medianas y grandes */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .barraprincipal {
     height: 120px;
   }
@@ -467,7 +469,14 @@ footer {
   
   .dropdown-content {
     min-width: 160px;
+    background-color: #000000;
+    position: relative;
   }
+
+  .card img {
+    object-fit: cover;
+  }
+
 }
 
 
@@ -496,8 +505,8 @@ footer {
   }
 
   .dropdown-content {
-    position: static;
-    background-color: transparent;
+    position: relative;
+    background-color: black;
     min-width: auto;
     box-shadow: none;
   }
@@ -511,6 +520,7 @@ footer {
   .card img {
     max-height: 250px;
     border-radius: 12px;
+    object-fit: cover;
   }
 
   .before-price {
@@ -542,18 +552,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .panel-carrito{
-      width: 50%;
-      height: 80%; 
-      background-color: rgb(245, 211, 61);
-  }
- 
-  #cart-buttoon {
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
   }
 
   .Logopagina {
@@ -610,6 +608,8 @@ footer {
  
   .dropdown-content {
     min-width: 150px;
+    background-color: black;
+    position: relative;
   }
 
   .contenedor-tarjetas{
