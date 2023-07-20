@@ -1,42 +1,8 @@
+import { printCards } from "./createCards.js"
+
 // cards dinámicas
 const cardContainer = document.querySelector(".contenedor-tarjeta");
-
-function createCard(comic) {
-  return `
-    <article class="tarjeta">
-      <img 
-        class="comic-img"
-        src="../images/comics/${comic.img}" 
-        alt="${comic.name}" 
-      />
-      <div class="comic-descripcion">
-        <h2 class="comic-titulo">
-          ${comic.name}
-        </h2>
-        <div class="comic-compra">
-          <p class="comic-precio">
-            $${comic.price}
-          </p>
-          <button class="comic-boton">
-            Añadir al carrito
-          </button>
-        </div> 
-      </div>
-    </article>
-  `
-}
-
-function printCards(comics) {
-  let template = "";
-
-  for(let comic of comics) {
-    template += createCard(comic)
-  }
-
-  cardContainer.innerHTML += template
-}
-
-printCards(products.comics)
+printCards(products.comics, cardContainer)
 
 // flecha para arriba 
 let mybutton = document.getElementById("myBtn");
