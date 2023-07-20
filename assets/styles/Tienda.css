@@ -184,11 +184,35 @@ footer {
   padding: 20px;
   padding-bottom:25px;
   display: block;
-  box-sizing:content-box;
   position: relative;
   width: 100%;
   bottom: 0;
 }
+
+.Newsletter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.src-contenedor{
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  align-items: center;
+  position: relative;
+  padding: auto;
+  margin-top: 9.5%;
+}
+
+.github-logo{
+  height:3rem;
+}
+
+#links{
+  font-size: 14px;
+}
+
 
 
 .titular {
