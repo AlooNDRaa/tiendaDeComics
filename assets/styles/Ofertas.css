@@ -94,17 +94,20 @@ a {
 }
 
 .panel-carrito {
-  position: absolute;
+  position:fixed;
   color: rgb(0, 0, 0);
-  font-family: comic;
   top: 0;
-  right:-100%;
-  width: 45%; /*utilizar unidades relativas!!*/
+  right:300px;
+  width:45%;
   height:100%;
-  background-color: rgb(245, 211, 61);
-  border-radius: 10px;
+  background-color: rgb(250, 219, 84);
+  border-radius: 10px 0px 0px 0px;
+  border-color: rgb(0, 0, 0);
+  box-shadow: inset 3px 3px rgb(248, 248, 248);
+  border-style: solid;
+  border-width:5px;
   transition: right 0.50s ease-in-out;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .tit{
@@ -116,7 +119,7 @@ a {
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  height: 300px;
+  height:350px;
   width:75%;
   background-color: #b47f0ed8;
   border-radius: 10px;
@@ -652,5 +655,20 @@ footer {
   .division {
     font-size: 14px;
   }
+
+  .compra{
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+  #boton-carro{
+    width: 50%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
