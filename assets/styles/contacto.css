@@ -8,15 +8,14 @@ body {
   color: white;
   font-weight: bolder;
   font-size: 30px;
-  text-shadow: grey 3px 2px 1px;
   text-align: center; 
 }
 .titulo{
   color: white;
   font-weight: bolder;
-  font-size: 30px;
-  text-shadow: grey 3px 2px 1px;
+  font-size: 20px;
   text-align: start;
+  padding-left: 10px;
 }
 
 .texto{
@@ -64,23 +63,14 @@ header > div.barraprincipal{
         align-items: center;
       }
 
-  .perfil, .carro {
+  .perfil {
     display: inline-flex;
     border-radius: 30px;
-    width: 30px;
-    height: 30px;
-  }
-
-  .perfil {
     width: 35px;
     height: 35px;
     margin-top:10px;
-   }
+  }
   
-   .carro {
-    width: 75px;
-    height: 75px;
-   }
   
    .icons{
     display: flex;
@@ -88,7 +78,6 @@ header > div.barraprincipal{
     align-items: center;
    }
   
-
   #Buscador {
   background: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png") no-repeat 0px 5px;
   background-size: 24px;
@@ -115,8 +104,6 @@ header > div.barraprincipal{
     padding-left: 15px;
     box-sizing: border-box;
   
-
-  
 }
 input {
     width: 500px;
@@ -140,6 +127,8 @@ label{
     border: none;
     color: black;
     text-align: center;
+    margin: 10px;
+ 
 }
 .submit-button:hover{
     box-shadow: 5px 10px 18px #888888;;
@@ -151,7 +140,8 @@ label{
  flex-direction: row;
  flex-wrap: nowrap;
  align-items: center;
-
+ align-content: center;
+ margin: 20px;
 }
 
 .iframe {
@@ -182,40 +172,12 @@ label{
   #myBtn:hover {
     background-color: #555; 
   }
-
-
-  .panel-carrito {
-    position: fixed;
-    color: rgb(255, 255, 255);
-    font-family: comic;
-    font-size: 20px;
-    top: 0;
-    right: -400px;
-    width: 400px;
-    height: 100%; 
-    background-color: #472828;
-    border-radius: 10px;
-    padding: 10px;
-    transition: right 0.4s ease-in-out;
-    z-index: 9999;
-  }
-  
-  .Producto-total{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10%;
-  }
-  
-  .envio{
-    display: flex;
-    justify-content:start;
-    margin-top: 70%;
-  }
   
   .h3{
     display: flex;
     justify-content: center;
   }
+
   footer {
     background-color: black;
     color: white;
@@ -228,21 +190,20 @@ label{
     bottom: 0;
   }
   
-  
   .titular {
     text-align: center;
     margin-bottom: 30px;
     margin-top: 0px;
-    
   }
+
   .Encabezado {
     text-align: center;
     margin-bottom: 15px;
-    
   }
   .texto {
     text-align: center;
   }
+
   .email-box {
   display: flex;
   justify-content: center;
