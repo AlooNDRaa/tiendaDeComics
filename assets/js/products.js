@@ -143,5 +143,5 @@ const products = {
             price: "3.650",
             img: "../images/ofers-img/star-wars.jpg",
         },
-    ]
+    ],
 }

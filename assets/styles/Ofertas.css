@@ -227,7 +227,7 @@ img {
   transform: translateZ(0);
 }
 
-.contenedor-tarjetas {
+.contenedor-tarjeta {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
