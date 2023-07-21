@@ -2,62 +2,97 @@
 <html>
     <head>
         <title>Coder Comics</title>
-        <link rel="stylesheet" href="../styles/Tienda.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
+  </head>
 
     <body>
-      
+    
     <header>
         <div class="barraprincipal">
           <div class="buscador">
-            <img src="../images/logo_size.jpg" alt="Gato" class="Logopagina">
+            <img src="/assets/images/LOGO/logo_size.jpg" alt="Gato" class="Logopagina">
             <input type="search" placeholder="Que estas buscando?" id="Buscador" />
           </div>
       <div class="contenedor">
         <div class="icons">
-            <a href="../pages/LogIn.html" >
-              <img src="../images/Perfiil.png" alt="Mi cuenta" class="perfil" >
+            <a href="/assets/pages/LogIn.html" >
+              <img src="/assets/images/iconos/Perfiil.png" alt="Mi cuenta" class="perfil" >
             </a>
             <a id="icono-compra-container" >
-                <img src="../images/img.png" alt="Carrito" class="carro" >
+                <img src="/assets/images/iconos/img.png" alt="Carrito" class="carro" >
+                <div id="numero"></div>
             </a>
           </div>
         </div>
         </div>
 
-        <div id="panel-carrito" class="panel-carrito">
-          <div class="h3">
-            <h4>Carrito de compras</h4>
-          </div>
-          <div class="Producto-total">
-           <h4>Productos</h4>
-           <h4>Subtotal</h4>
-          </div>
-          <div class="envio">
-            <h3>Total de envio = </h3>
-          </div>
-        </div>
     </header>
 
 <nav id="colorletra">
     <ul class="menu">
-<<<<<<<< HEAD:index.html
-        <li><a href="/Comics/Comics.html">Comics</a></li>
-        <li><a href="assets/pages/manga.html">Manga</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="Ofertas.html">Ofertas</a></li>
-========
         <li><a href="../pages/Comics.html">Comics</a></li>
         <li><a href="../pages/manga.html">Manga</a></li>
         <li><a href="../pages/contacto.html">Contacto</a></li>
         <li><a href="../pages/Ofertas.html">Ofertas</a></li>
->>>>>>>> 46238b762dcce1ff3fc6c36de010d871dd96c68e:assets/pages/Tienda.html
+      
+          <div class="texto-c">
+          <div class="Text-center" id="carrito-t">
+            <h4>Sus Productos</h4>
+          <div class="informacion-compra" id="informacion-compra">
+           <h4>Cesta</h4>
+          </div>
+          </div>
+        </div>
+          <div class="compra" id="cart-button">
+            <button class="compra" id="cart-button">Finalizar compra</button>
+            <button class="borrar-compra" id="cart-button">Vaciar carrito</button>
+          </div>
+      </div>
+
+    </header>
+
+<nav id="colorletra">
+    <ul class="menu" id="dropbtn">
+        <li class="dropdown">
+          <a href="/assets/pages/Comics.html">Comics</a>
+          <div class="dropdown-content">
+              <a href="#">Ciencia Ficción</a>
+              <a href="#">Romance</a>
+              <a href="#">Horror</a>
+              <a href="#">Super Heroes</a>
+              <a href="#">Humor</a>
+              <a href="#">Crimen</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="/assets/pages/manga.html">Manga</a>
+          <div class="dropdown-content">
+              <a href="#">Shonen</a>
+              <a href="#">Shoujo</a>
+              <a href="#">Gore</a>
+              <a href="#">Seinen</a>
+              <a href="#">BL</a>
+              <a href="#">Shounen-ai</a>
+              <a href="#">Moe</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="/assets/pages/contacto.html" >Contacto</a>
+          <div class="dropdown-content">
+              <a href="#">¿Quienes somos?</a>
+              <a href="#">Preguntas Frecuentes</a>
+              <a href="#">Nuestros locales</a>
+          </div>
+      </li>
+        <li><a href="/assets/pages/Ofertas.html">Ofertas</a></li>
     </ul>
 </nav>
 
@@ -71,15 +106,15 @@
 
     <div class="carousel-inner">
       <div class="item active">
-        <img class=imgc; src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwE5GR2lV7iJSDbqa4EfBh99-6EhFsMMCXEA&usqp=CAU" alt="hombre araña" style="width:300px;">
+        <img class=imgc; src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwE5GR2lV7iJSDbqa4EfBh99-6EhFsMMCXEA&usqp=CAU" alt="hombre araña" style="width:300px; height: 450px; padding: 10px;">
       </div>
 
-      <div class="item">
-        <img class=imgc; src="https://hablandodecomics.files.wordpress.com/2012/01/portada-93-hulk.jpg" alt="hulk" style="width:300px;">
+      <div class="item active">
+        <img class=imgc; src="https://hablandodecomics.files.wordpress.com/2012/01/portada-93-hulk.jpg" alt="hulk" style="width:300px; height: 450px; padding: 10px;">
       </div>
     
-      <div class="item">
-        <img class=imgc; src="https://i0.wp.com/www.lacasadeel.net/wp-content/uploads/2016/05/Portadas-Star-Wars-11.png?fit=416%2C640&ssl=1" alt="star-wars" style="width:300px;">
+      <div class="item active">
+        <img class=imgc; src="https://i0.wp.com/www.lacasadeel.net/wp-content/uploads/2016/05/Portadas-Star-Wars-11.png?fit=416%2C640&ssl=1" alt="star-wars" style="width:300px; height: 450px; padding: 10px;">
       </div>
     </div>
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -96,20 +131,20 @@
 <section>
   <div class="pagos">
     <div class="pagarconmp">
-      <img class="mp" id="Merc" src="../images/mercadopago.png" alt="MP">
-      <h3>Billetera virtual</h3>
+      <img class="mp" id="Merc" src="/assets/images/MetodosP/mercadopago.png" alt="MP">
+      <h3 class="pagostexto">Billetera virtual</h3>
     </div>
     <div class="pagarcontj">
-      <img class="tarj" src="../images/tajetas.png" alt="tarjetas">
-      <h3>Tarjetas de débito/crédito</h3>
+      <img class="tarj" src="/assets/images/MetodosP/tajetas.png" alt="tarjetas">
+      <h3 class="pagostexto">Tarjetas de débito/crédito</h3>
     </div>
     <div class="mod">
-      <img class="modo" src="../images/MODO.png" alt="modo1">
-      <h3>MODO</h3>
+      <img class="modo" src="/assets/images/MetodosP/MODO.png" alt="modo1">
+      <h3 class="pagostexto">MODO</h3>
     </div>
     <div class="efvo">
-      <img class="efectivo" src="../images/efectivo.png" alt="efectivo">
-      <h3>Efectivo/Transferencia bancaria</h3>
+      <img class="efectivo" src="/assets/images/MetodosP/efectivo.png" alt="efectivo">
+      <h3 class="pagostexto">Efectivo</h3>
     </div>
   </div>
 </section>
@@ -129,10 +164,85 @@
           <input class="tbox" type="email" name="" value="" placeholder="Enter your email">
           <button class="btn" type="button" name="button">Suscribe</button>
         </div>
+    <div class="src-contenedor">
+      <div class="enlacees">
+        <img 
+        src="/assets/images/iconos/GH.png" 
+        alt="GitHub-logo"
+        class="github-logo">
+        <a
+        class="links"
+        id="links" 
+        href="https://github.com/AlooNDRaa">AlooNDRaa
+      </a>
+      </div>
+      <div class="enlacees">
+        <img 
+        src="/assets/images/iconos/GH.png" 
+        alt="GitHub-logo"
+        class="github-logo">
+        <a
+        class="links"
+        id="links" 
+        href="https://github.com/ValentinaBS">ValentinaBS
+      </a>
+      </div><div class="enlacees">
+        <img 
+        src="/assets/images/iconos/GH.png" 
+        alt="GitHub-logo"
+        class="github-logo">
+        <a
+        class="links"
+        id="links" 
+        href="https://github.com/ZanardiAnA">ZanardiAnA
+      </a>
+      </div><div class="enlacees">
+        <img 
+        src="/assets/images/iconos/GH.png" 
+        alt="GitHub-logo"
+        class="github-logo">
+        <a
+        class="links"
+        id="links" 
+        href="https://github.com/LoulyGodoyLotta">LoulyGodoyLotta
+      </a>
+      </div><div class="enlacees">
+        <img 
+        src="/assets/images/iconos/GH.png" 
+        alt="GitHub-logo"
+        class="github-logo">
+        <a
+        class="links"
+        id="links" 
+        href="https://github.com/BelenDelgadilloArias">BelenDgArias
+      </a>
+      </div>
+      <div class="enlacees">
+        <img 
+        src="/assets/images/iconos/GH.png" 
+        alt="GitHub-logo"
+        class="github-logo">
+        <a
+        class="links"
+        id="links" 
+        href="https://github.com/guadalupe1516">guadalupe1516
+      </a>
+    </div>
+      <div class="enlacees">
+        <img 
+        src="/assets/images/iconos/GH.png" 
+        alt="GitHub-logo"
+        class="github-logo">
+        <a
+        class="links"
+        id="links" 
+        href="https://github.com/FlorPereyra">FlorPereyra
+      </a>
+    </div>
     </div>
       </footer>
 
       <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
-     <script src="../js/Tienda.js"></script>
+     <script src="/assets/js/Tienda.js"></script>
     </body>
 </html>
