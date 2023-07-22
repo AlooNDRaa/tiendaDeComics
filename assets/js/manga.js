@@ -1,7 +1,8 @@
-import { printCards } from "./createCards.js";
+import { printCards } from "./createCards.js"
 
-const cardContainer = document. querySelector (".contenedor-tarjetas");
-printCards(product.mangas, cardContainer)
+// cards dinamicas
+const cardContainer = document.querySelector(".contenedor-tarjeta");
+printCards(products.mangas, cardContainer)
 
 // icono desplazable 
 
