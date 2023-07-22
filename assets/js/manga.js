@@ -1,3 +1,8 @@
+import { printCards } from "./createCards.js";
+
+const cardContainer = document. querySelector (".contenedor-tarjetas");
+printCards(product.mangas, cardContainer)
+
 // flecha para arriba 
 let mybutton = document.getElementById("myBtn");
 
