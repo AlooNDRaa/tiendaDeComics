@@ -82,3 +82,77 @@ img {
         height: 600px;
     }
 }
+
+/* css del footer*/
+
+footer {
+    background-color: black;
+    color: white;
+    padding-bottom: 25px;
+    display: block;
+    box-sizing: inherit;
+    position: relative;
+    max-width:100%;
+    margin: 0 auto;
+    bottom: 0;
+  }
+  
+  .titular {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 10px;
+  }
+  
+  .Encabezado {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .email-box {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+  }
+  
+  .tbox,
+  .btn {
+    border: none;
+    outline: none;
+  }
+  
+  .tbox {
+    width: 0px;
+    transition: 0.6s;
+  }
+  
+  .email-box:hover > .tbox,
+  .tbox:focus {
+    width: 260px;
+    padding: 10px 0;
+  }
+  
+  .btn {
+    background: #f35c20;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+  
+  .division {
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+  }
+  
+  .division {
+    font-size: 25px;
+    font-family: 'Comic Neue', cursive;
+  }
+  
+  .tit {
+    font-size: calc(1.375rem + 1.5vw);
+  }
