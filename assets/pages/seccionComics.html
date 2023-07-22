@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../images/LOGO/logo_size.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/comics1.css" />
+    <title>Coders Comics: Comics</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="barraprincipal">
+        <div class="conjunto">
+          <img src= "../images/LOGO/logo_size.jpg" alt="Gato" class="Logopagina" />
+          <input
+            type="search"
+            placeholder="Que estas buscando?"
+            id="Buscador"
+          />
+        </div>
+        <div class="icons">
+          <a href="LogIn.html">
+            <img src="../images/iconos/Perfiil.png" alt="Mi cuenta" class="perfil" />
+          </a>
+          <a id="icono-compra-container">
+            <img src="../images/iconos/img.png" alt="Carrito" class="carro" />
+          </a>
+        </div>
+      </div>
+
+      <div id="panel-carrito" class="panel-carrito">
+        <div class="h3">
+          <h4>Carrito de compras</h4>
+        </div>
+        <div class="Producto-total">
+          <h4>Productos</h4>
+          <h4>Subtotal</h4>
+        </div>
+        <div class="envio">
+          <h3>Total de envio =</h3>
+        </div>
+      </div>
+    </header>
+
+    <nav id="colorletra">
+      <ul class="menu">
+        <li><a href="#">Comics</a></li>
+        <li><a href="../pages/manga.html">Manga</a></li>
+        <li><a href="../pages/contacto.html">Contacto</a></li>
+        <li><a href="../pages/Ofertas.html">Ofertas</a></li>
+      </ul>
+    </nav>
+
+    <main class="contenedor-tarjeta">
+    </main>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+    <script src="../js/products.js"></script>
+    <script type="module" src="../js/comics.js"></script>
+  </body>
+</html>
