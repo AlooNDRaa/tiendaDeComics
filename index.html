@@ -11,8 +11,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
-
+        <link rel="stylesheet" href="/assets/styles/Tienda.css">
+    </head>
     <body>
     
     <header>
@@ -33,16 +33,8 @@
           </div>
         </div>
         </div>
-
-    </header>
-
-<nav id="colorletra">
-    <ul class="menu">
-        <li><a href="../pages/Comics.html">Comics</a></li>
-        <li><a href="../pages/manga.html">Manga</a></li>
-        <li><a href="../pages/contacto.html">Contacto</a></li>
-        <li><a href="../pages/Ofertas.html">Ofertas</a></li>
-      
+        
+        <div id="panel-carrito" class="panel-carrito">
           <div class="texto-c">
           <div class="Text-center" id="carrito-t">
             <h4>Sus Productos</h4>
@@ -59,42 +51,14 @@
 
     </header>
 
-<nav id="colorletra">
-    <ul class="menu" id="dropbtn">
-        <li class="dropdown">
-          <a href="/assets/pages/Comics.html">Comics</a>
-          <div class="dropdown-content">
-              <a href="#">Ciencia Ficción</a>
-              <a href="#">Romance</a>
-              <a href="#">Horror</a>
-              <a href="#">Super Heroes</a>
-              <a href="#">Humor</a>
-              <a href="#">Crimen</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="/assets/pages/manga.html">Manga</a>
-          <div class="dropdown-content">
-              <a href="#">Shonen</a>
-              <a href="#">Shoujo</a>
-              <a href="#">Gore</a>
-              <a href="#">Seinen</a>
-              <a href="#">BL</a>
-              <a href="#">Shounen-ai</a>
-              <a href="#">Moe</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="/assets/pages/contacto.html" >Contacto</a>
-          <div class="dropdown-content">
-              <a href="#">¿Quienes somos?</a>
-              <a href="#">Preguntas Frecuentes</a>
-              <a href="#">Nuestros locales</a>
-          </div>
-      </li>
-        <li><a href="/assets/pages/Ofertas.html">Ofertas</a></li>
-    </ul>
-</nav>
+    <nav id="colorletra">
+      <ul class="menu">
+          <li><a href="../pages/Comics.html">Comics</a></li>
+          <li><a href="../pages/manga.html">Manga</a></li>
+          <li><a href="../pages/contacto.html">Contacto</a></li>
+          <li><a href="../pages/Ofertas.html">Ofertas</a></li>
+      </ul>
+  </nav>
 
 <div class="container" > 
    <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -103,12 +67,10 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
-
     <div class="carousel-inner">
       <div class="item active">
         <img class=imgc; src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwE5GR2lV7iJSDbqa4EfBh99-6EhFsMMCXEA&usqp=CAU" alt="hombre araña" style="width:300px; height: 450px; padding: 10px;">
       </div>
-
       <div class="item active">
         <img class=imgc; src="https://hablandodecomics.files.wordpress.com/2012/01/portada-93-hulk.jpg" alt="hulk" style="width:300px; height: 450px; padding: 10px;">
       </div>
@@ -148,7 +110,6 @@
     </div>
   </div>
 </section>
-
   <footer>
     <div class="Newsletter">
         <div class="titular">
@@ -164,6 +125,7 @@
           <input class="tbox" type="email" name="" value="" placeholder="Enter your email">
           <button class="btn" type="button" name="button">Suscribe</button>
         </div>
+    </div>
     <div class="src-contenedor">
       <div class="enlacees">
         <img 
@@ -241,7 +203,6 @@
     </div>
     </div>
       </footer>
-
       <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
      <script src="/assets/js/Tienda.js"></script>
     </body>
