@@ -42,30 +42,23 @@ document.addEventListener('click', (event) => {
 });
 
 
-//// Añadir a carrito por que si no funciona lloro
+// Añadir a carrito por que si no funciona lloro
 
 // Obtener referencia al botón "Añadir al carrito"
-const addToCartButtons = document.querySelectorAll('.btnn button');
-// Obtener referencia al div de display2
-const display2Div = document.querySelector('.display2');
-// Obtener referencia al elemento "valor-total"
-const valorTotalElement = document.querySelector('.valor-total');
-// Agregar evento click a cada botón "Añadir al carrito"
-addToCartButtons.forEach(button => {
-  button.addEventListener('click', addToCart);
+addToCartButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    const product = productosDesdeAPI[index]; // Obtener el producto correspondiente desde la lista de productos
+    addToCart(product);
+  });
 });
 
 // seguir cantidad de productos o lloro si no sirve
 const cartItems = {};
 let totalValue = 0;
 
-function addToCart(event) {
-  const card = event.target.closest('.card'); // Obtener la tarjeta padre del botón que presiono o lloro
-  const productImage = card.querySelector('img').src; // Obtener la URL de la imagen del producto
-  const productPrice = card.querySelector('.price').innerText; // Obtener el precio del producto
-
-  // verificar y sumar si ya esta o lloro y me arranco los pelos
-  const existingProduct = display2Div.querySelector(`.product-container img[src="${productImage}"]`);
+function addToCart(product) {
+  // verificar y sumar si ya esta o agregar un nuevo producto al carrito
+  const existingProduct = display2Div.querySelector(`.product-container img [src="${product.img}"]`);
   if (existingProduct) {
     // Si el producto ya existe, incrementar el contador en 1
     const counter = existingProduct.parentElement.querySelector('.counter');
@@ -77,12 +70,12 @@ function addToCart(event) {
     productContainer.classList.add('product-container');
     // Crear un elemento de imagen para la imagen del producto
     const productImageElement = document.createElement('img');
-    productImageElement.src = productImage;
+    productImageElement.src = product.img;
     productImageElement.classList.add('product-image');
     productContainer.appendChild(productImageElement);
     // Crear un elemento de precio para el precio del producto
     const productPriceElement = document.createElement('span');
-    productPriceElement.textContent = productPrice;
+    productPriceElement.textContent = `$${product.price.toFixed(2)}`;
     productContainer.appendChild(productPriceElement);
     // Crear un elemento de contador e inicializarlo en 1
     const counterElement = document.createElement('span');
@@ -93,10 +86,13 @@ function addToCart(event) {
     display2Div.appendChild(productContainer);
   }
 
-  // Actualizar el valor total - analiza el argumento el parse y lo devuelve XD
-  totalValue += parseFloat(productPrice.slice(1)); // Convertir el precio a número y sumarlo al totalValue
+  addToCart();
+
+  // Actualizar el valor total
+  totalValue += product.price; // Sumar el precio al totalValue
   valorTotalElement.textContent = `$${totalValue.toFixed(2)}`; // Mostrar el totalValue con dos decimales
 }
+
 
 
 /// vaciar el carrito y precio
@@ -115,8 +111,5 @@ function vaciarCarrito() {
   // Actualizar el contenido del elemento "valor-total" a vacío
   valorTotalElement.textContent = '';
 }
-
-
-
 
 
