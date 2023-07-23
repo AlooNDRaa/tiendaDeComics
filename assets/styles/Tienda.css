@@ -318,7 +318,9 @@ section {
   width: 50px;
   height: 50px;
 }
-@media screen and (max-width: 768px) {
+
+
+@media screen and (max-width: 768px){
   .barraprincipal {
     display: flex;
     height: auto;
@@ -351,7 +353,7 @@ section {
   }
 
 /* Estilos para pantallas medianas y grandes */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px){
   .barraprincipal {
     height: 120px;
   }
@@ -374,15 +376,57 @@ section {
   .pagos{
     width: 100%;
   }
-}
+  .carousel-inner{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 
+  }
+  .carousel-inner .item{
+    flex: 0 0 50%;
+    scroll-snap-align: start;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-inner .item img{
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .carousel-indicators {
+    display: none;
+  } .carousel-inner{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+  }
+  .carousel-inner .item{
+    flex: 0 0 50%;
+    scroll-snap-align: start;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-inner .item img{
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  }
 
 /* Estilos para dispositivos pequeños (hasta 480px) */
 
 @media screen and (max-width: 480px) {
   .Logopagina {
     height: 60px;
-    width: 60px;
+    width: 600px;
   }
 
   .icons {
@@ -411,9 +455,6 @@ section {
   .division {
     font-size: 18px;
   }
-  .carousel-item{
-    max-width: 300px;
-  }
   .imgc{
     width: auto;
     max-height: 250px
@@ -439,6 +480,34 @@ section {
     font-size: 16px; /* Redefine el tamaño del encabezado <h4> para pantallas más pequeñas */
     margin-bottom: 10px; /* Agrega un espaciado inferior más pequeño para pantallas más pequeñas */
   }
+  .carousel-inner{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+  }
+  .carousel-inner .item{
+    flex: 0 0 50%;
+    scroll-snap-align: start;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-inner .item img{
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .src-contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 /* Estilos para dispositivos de 300 a 600 píxeles */
@@ -455,7 +524,6 @@ section {
     height: 50px;
     width: 50px;
     margin-bottom: 10px;
-    margin-left: -8%;
   }
 
   .conjunto{
@@ -506,4 +574,77 @@ section {
   .division {
     font-size: 14px;
   }
+    .carousel-image {
+      max-width: 150px; /* Establece el tamaño máximo de las imágenes del carrusel para pantallas desde 200px hasta 600px */
+      max-height: 150px
+  }
+  .pagos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .pagos .pagarconmp,
+  .pagos .pagarcontj,
+  .pagos .mod,
+  .pagos .efvo {
+    margin: 5px; /* Agrega un espaciado entre los métodos de pago */
+    text-align: center; /* Centra el contenido de los métodos de pago en pantallas más pequeñas */
+  }
+.pagos img {
+    max-width: 100px; /* Limita el tamaño de las imágenes de los métodos de pago */
+  }
+
+  /* Ajusta el tamaño y estilos de los encabezados <h4> para pantallas más pequeñas */
+  h4 {
+    font-size: 16px; /* Redefine el tamaño del encabezado <h4> para pantallas más pequeñas */
+    margin-bottom: 10px; /* Agrega un espaciado inferior más pequeño para pantallas más pequeñas */
+  }
+  .carousel-inner{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+  }
+  .carousel-inner .item{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-inner .item:not(:first-child){
+    padding-left: 0;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .src-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mostrar 2 elementos por fila */
+    grid-gap: 10px; /* Espacio entre las columnas */
+  }
+
+  .enlacees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .github-logo{
+    width: 30px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .links{
+    text-align: center;
+    font-size: 14px;
+  }
+
 }
