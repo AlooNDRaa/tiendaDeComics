@@ -66,12 +66,12 @@ a {
 }
 
 .panel-carrito {
-  position: absolute;
+  position: fixed;
   color: rgb(0, 0, 0);
   font-family: comic;
   top: 0;
   right:-100%;
-  width: 45%; /*utilizar unidades relativas!!*/
+  width: 45%;
   height:100%;
   background-color: rgb(245, 211, 61);
   border-radius: 10px;
@@ -376,14 +376,7 @@ footer {
     height: auto;
     margin-bottom: 10px;
   }
-  
-  .dropdown-content {
-    position: relative;
-    background-color: black;
-    min-width: auto;
-    box-shadow: none;
-  }
-  
+
   .contenedor-tarjetas{
     display: flex;
     flex-wrap: wrap;
@@ -438,12 +431,6 @@ footer {
     width: 125px;
     height: 50px;
   }
-  
-  .dropdown-content {
-    min-width: 160px;
-    background-color: #000000;
-    position: relative;
-  }
 
   .card img {
     object-fit: cover;
@@ -474,13 +461,6 @@ footer {
     width: auto;
     height: auto;
     margin-bottom: 10px;
-  }
-
-  .dropdown-content {
-    position: relative;
-    background-color: black;
-    min-width: auto;
-    box-shadow: none;
   }
 
   .card {
@@ -576,12 +556,6 @@ footer {
   .carro{
     width: 35px;
     height: 35px;
-  }
- 
-  .dropdown-content {
-    min-width: 150px;
-    background-color: black;
-    position: relative;
   }
 
   .contenedor-tarjetas{
