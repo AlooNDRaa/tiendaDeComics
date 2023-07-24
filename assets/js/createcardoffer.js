@@ -11,7 +11,7 @@ function createCard(product) {
         <span class="price">$${product.price}</span>
       </div>
       <div class="btnn" id="buttn">
-        <button>Añadir al carrito</button>
+        <button class="btnn">Añadir al carrito</button>
       </div>
     </div>
   `;
@@ -26,3 +26,4 @@ export function printCards(products, container) {
 
   container.innerHTML += template;
 }
+
