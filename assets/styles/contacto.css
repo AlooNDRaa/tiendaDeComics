@@ -24,7 +24,6 @@
  }
 
  form {
-    
     margin-top: 0em;
     min-height: 1px;
     padding-right: 15px;
@@ -73,6 +72,8 @@ label{
 
 .iframe {
     border-width: 2px;
+    height: 300px;
+    width: 300px;
     border-style: inset;
     border-color: initial;
     border-image: initial;
@@ -82,4 +83,14 @@ label{
   .h3{
     display: flex;
     justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .contenedor{
+      flex-direction: column;
+    }
+
+    input{
+      width: 100%;
+    }
   }
