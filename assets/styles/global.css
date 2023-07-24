@@ -567,9 +567,8 @@ body {
     display: none;
   }
   .src-contenedor {
-    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap:wrap;
   }
 
 }
@@ -683,10 +682,10 @@ body {
   .carousel-indicators {
     display: none;
   }
+
   .src-contenedor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Mostrar 2 elementos por fila */
-    grid-gap: 10px; /* Espacio entre las columnas */
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .enlacees {
@@ -697,7 +696,6 @@ body {
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
-    width: 100%;
   }
 
   .github-logo{

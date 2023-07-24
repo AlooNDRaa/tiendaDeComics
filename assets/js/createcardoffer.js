@@ -7,7 +7,7 @@ function createCard(product) {
       </div>
       <h4>${product.name}</h4>
       <div class="prices">
-        <span class="before-price">$${product.price}</span>
+        <span class="before-price">$${product.beforeprice}</span>
         <span class="price">$${product.price}</span>
       </div>
       <div class="btnn" id="buttn">
