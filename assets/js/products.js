@@ -86,6 +86,25 @@ const products = {
             price: "2.600",
             img: "images_manga/TK6.jfif"
         },
+        {
+            id: 7,
+            name: "Mi nueva vida como la villana vol. 1",
+            price: "3.000",
+            img: "images_manga/Katerinajpg.jfif"
+        },
+        {
+            id: 8,
+            name: "The promised neverland vol. 1",
+            price: "2.700",
+            img: "images_manga/The Promised Neverland.png"
+        },
+        {
+            id: 9,
+            name: "My Hero Academia vol. 28",
+            price: "2900",
+            img: "images_manga/BNHA28.jfif"
+
+        },
     ],
 
     ofertas:[

@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../styles/manga.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ 
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/global.css">
+    <link rel="stylesheet" href="../styles/manga.css">
     <title>Coders Comics:Manga</title>
 </head>
 <style>
@@ -20,21 +17,42 @@
     <header>
         <div class="barraprincipal">
             <div class="conjunto">
-            <a href="Tienda.html"></a>
+            <a href="index.html"></a>
+              <img src="/assets/images/LOGO/logo_size.jpg" alt="Gato" class="Logopagina">
               <input type="search" placeholder="Que estas buscando?" id="Buscador" />
             </div>
           <div class="icons">
               <a href="LogIn.html">
+                  <img src="/assets/images/iconos/Perfiil.png" alt="Mi cuenta" class="perfil">
               </a>
+              <a id="icono-compra-container">
+                  <img src="/assets/images/iconos/img.png" alt="Carrito" class="carro">
+              </a>
+            </div>
+          </div>
+
+          <div id="panel-carrito" class="panel-carrito">
+            <div class="Text-center" id="carro-texto">
+              <h4>Sus Productos</h4>
+            <div class="informacion-compra" id="informacion-compra">
+             <h4>Cesta</h4>
+            </div>
+            <div class="display2">
+              <div class="product-container"></div>
+            </div>
+              <div class="valor-total"></div>
+            </div>
+            <div class="compra" id="cart-buttoon">
+              <button class="compra1" id="boton-carro">Finalizar compra</button>
+              <button class="borrar-compra" id="boton-carro">Vaciar carrito</button>
             </div>
         </div>
           
     </header>
-    
 
 <nav id="colorletra">
     <ul class="menu">
-        <li><a href="../pages/Comics.html">Comics</a></li>
+        <li><a href="../pages/seccionComics.html">Comics</a></li>
         <li><a href="../pages/manga.html">Manga</a></li>
         <li><a href="../pages/contacto.html">Contacto</a></li>
         <li><a href="../pages/Ofertas.html">Ofertas</a></li>
@@ -57,60 +75,30 @@
       <button class="borrar-compra" id="boton-carro">Vaciar carrito</button>
     </div>
 </div>
+<main class="contenedor-tarjeta"></main>
 
-<div class="contenedor" id="contenedor 2">
-    <div>
-        <img src="/assets/images/images_manga/demon slayer 1.jfif">
-    <div class="informacion">
-    <h2> Demon Slayer Vol. 1</h2>
-    <p class="precio">$1.899<span>.99</span></p>
-    <button class="button buy">Comprar</button>
-    </div>
-    </div>
-    <div>
-
-        <img src="/assets/images/images_manga/tokyo1.png" alt="producto 2">
-        <div class="informacion">
-        <h2>Tokyo Ghol vol. 1</h2>
-        <p class="precio">$2.399</p>
-        <button>Comprar</button>
-    </div>
-    <div>
-
-        <img src="/assets/images/images_manga/hanako1.png" alt="producto 3">
-        <div class="informacion">
-        <h2>Jibaku Shonen Hanako-kun vol. 1</h2>
-        <p class="precio">$13.389</p>
-        <button>Comprar</button>
-    </div>
-    <div>
-        <img src="/assets/images/images_manga/spy8.jfif" alt="producto 4">
-        <div class="informacion">
-        <h2>SpyxFamily vol. 8</h2>
-        <p class="precio">$2.159</p>
-    <button>Comprar</button>
-    </div>
-  <div>
-    <img src="/assets/images/images_manga/given1.jfif">
-    <div class="informacion">
-    <h2>Given vol. 1</h2>
-    <p class="precio">$2.300</p>
-    <button>Comprar</button>
-   </div>
-   <div>
-
-    <img src="/assets/images/images_manga/TK6.jfif" alt="producto 5">
-    <div class="informacion">
-    <h2>Tokyo Revengers vol. 6</h2>
-    <p class="precio">$2600</p>
-        <button>Comprar</button>
-    </div>
- </div> 
+  <footer>
+    <div class="Newsletter">
+      <div class="titular">
+      <h2>NEWSLETTER</h2>
+      </div>
+      <div class="Encabezado">
+        <h1 class="tit">RECIBÍ TODAS LAS OFERTAS</h1>
+      </div>
+      <div class="texto">
+        <h3 class="division">¿Quieres recibir nuestras ofertas? ¡Registrate ya mismo y comenzá a disfrutarlas!</h3>
+      </div>
+      <div class="email-box">
+        <input class="tbox" type="email" name="" value="" placeholder="Enter your email">
+        <button class="btn" type="button" name="button">Suscribe</button>
+      </div>
+  </div>
+  </footer>
 
  <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
- 
-<script src="../../assets/js/manga.js"></script>  
-
+ <script src="/assets/js/Tienda.js"></script>
+ <script src="/assets/js/products.js"></script>
+<script type="module" src="../../assets/js/manga.js"></script>  
 </body>
 </html>
 
