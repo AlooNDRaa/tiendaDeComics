@@ -98,6 +98,13 @@ const products = {
             price: "2.700",
             img: "images_manga/The Promised Neverland.png"
         },
+        {
+            id: 9,
+            name: "My Hero Academia vol. 28",
+            price: "2900",
+            img: "images_manga/BNHA28.jfif"
+
+        },
     ],
 
     ofertas:[
